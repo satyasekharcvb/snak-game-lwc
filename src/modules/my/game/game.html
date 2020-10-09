@@ -1,0 +1,8 @@
+<template>
+    <div class="header">Score: {score}</div>
+    <div class="game-container">
+        <template for:each={gameBlocks} for:item="block">
+            <div class={block.class} key={block.id}>&nbsp;</div>
+        </template>
+    </div>
+</template>
